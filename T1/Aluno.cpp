@@ -15,34 +15,39 @@ Aluno(unsigned int matr)
 }
 
 ~Aluno(void)
-{}
+{
+  n1 = 0;
+  n2 = 0;
+  nf = 0;
+  matricula = 0;
+}
 
-void set_n1(unsigned float nota)
+void Aluno::set_n1(unsigned float nota)
 {
   n1 = nota;
 }
 
-void set_n2(unsigned float nota)
+void Aluno::set_n2(unsigned float nota)
 {
   n2 = nota;
 }
 
-unsigned float get_n1(void)
+unsigned float Aluno::get_n1(void)
 {
   return n1;
 }
 
-unsigned float get_n2(void)
+unsigned float Aluno::get_n2(void)
 {
   return n2;
 }
 
-unsigned int get_matricula(void)
+unsigned int Aluno::get_matricula(void)
 {
   return matricula;
 }
 
-unsigned float calcula_nf(void)
+unsigned float Aluno::calcula_nf(void)
 {
   nf = (n1+n2)/2;
   return nf;
