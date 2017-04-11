@@ -12,7 +12,8 @@ class Gerente
   Aluno turma[20];
   unsigned char numero_alunos;
 public:
-  ~Turma(void);
+  Gerente();
+  ~Gerente(void);
   void cadastra();
   void deleta(unsigned int matricula);
   void consulta_aluno(unsigned int matricula);

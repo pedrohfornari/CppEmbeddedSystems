@@ -15,8 +15,8 @@ class Aluno
 public:
   Aluno(unsigned int matr);
   ~Aluno(void);
-  void set_n1(unsigned float nota);
-  void set_n2(unsigned float nota);
+  void set_n1();
+  void set_n2();
   void set_matricula(unsigned int matr);
   unsigned float get_n1(void);
   unsigned float get_n2(void);

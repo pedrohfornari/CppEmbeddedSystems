@@ -22,14 +22,26 @@ Aluno(unsigned int matr)
   matricula = 0;
 }
 
-void Aluno::set_n1(unsigned float nota)
+void Aluno::set_n1(void)
 {
-  n1 = nota;
+  cout << "digite a nota\n";
+  cin >> n1;
+  while(n1>10)
+  {
+    cout<<"notas sao de 0 a 10, repita o valor\n"
+    cin>>n1
+  }
 }
 
-void Aluno::set_n2(unsigned float nota)
+void Aluno::set_n2()
 {
-  n2 = nota;
+  cout << "digite a nota\n";
+  cin >> n2;
+  while(n1>10)
+  {
+    cout<<"notas sao de 0 a 10, repita o valor\n"
+    cin>>n2
+  }
 }
 
 unsigned float Aluno::get_n1(void)
